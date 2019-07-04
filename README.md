@@ -12,4 +12,8 @@ pip install -r requirements.txt
 ```
 sqlite3 <database's name> < food_tracker.sql
 ```
-3. Run app.py
+3. Open db.py and replace food_log.db to your database's name in connect_db function.
+```
+sql = sqlite3.connect(os.path.join(os.path.dirname(__name__), os.path.abspath('food_log.db')))
+```
+4. Run app.py
